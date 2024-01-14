@@ -95,7 +95,7 @@ async function getOpenAICompletion(
     }
 
     const response = await openai.createCompletion({
-      model: MODEL_NAME,
+      model: "gpt-3.5-turbo-16k",
       prompt: openAIPrompt,
       max_tokens: MAX_TOKENS,
       temperature: TEMPERATURE,
